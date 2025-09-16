@@ -1,0 +1,57 @@
+/* Custom Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; }
+
+.hero { padding: 80px 0; background-color: #f8f9fa; }
+
+.feature-card { border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden; }
+.feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+.testimonial-card { border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; overflow: hidden; }
+.testimonial-card img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+
+.subscribe-section { background-color: #1a1a1a; color: white; padding: 60px 0; }
+.subscribe-section h2, .subscribe-section h3 { color: white; }
+.subscribe-section p { color: #a0a0a0; }
+
+.footer { background-color: #f8f9fa; padding: 40px 0; border-top: 1px solid #e9ecef; }
+.footer a { color: #28a745; text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+.footer hr { margin: 20px 0; border-color: #e9ecef; }
+
+.bottom-bar { background-color: #28a745; color: white; padding: 10px 0; font-size: 12px; }
+
+.logo { font-weight: bold; color: #28a745; }
+
+.isometric-img { max-width: 100%; height: auto; display: block; }
+
+.section-title { font-size: 2rem; margin-bottom: 30px; color: #333; }
+.section-subtitle { font-size: 1.1rem; color: #666; margin-bottom: 40px; }
+
+.btn-green { background-color: #28a745; border-color: #28a745; color: white; border-radius: 30px; padding: 10px 30px; font-weight: 600; transition: all 0.3s ease; }
+.btn-green:hover { background-color: #218838; border-color: #1e7e34; transform: translateY(-2px); }
+
+.btn-outline-green { background-color: transparent; border-color: #28a745; color: #28a745; border-radius: 30px; padding: 10px 30px; font-weight: 600; transition: all 0.3s ease; }
+.btn-outline-green:hover { background-color: #28a745; color: white; }
+
+.feature-icon { color: #28a745; margin-right: 10px; }
+
+.quote-icon { font-size: 4rem; opacity: 0.1; position: absolute; bottom: 20px; right: 20px; }
+
+.category-badge { font-size: 0.8rem; color: #28a745; text-transform: uppercase; font-weight: 600; margin-bottom: 10px; }
+.category-name { font-size: 1.5rem; color: #6c757d; margin-bottom: 15px; }
+
+.testimonials-grid { gap: 20px; }
+
+@media (max-width: 768px) {
+  .hero { padding: 60px 0; }
+  .section-title { font-size: 1.5rem; }
+  .section-subtitle { font-size: 1rem; margin-bottom: 20px; }
+  .subscribe-section { padding: 40px 0; }
+  .footer { padding: 20px 0; }
+  .navbar { padding: 0.5rem; }
+  .navbar-brand { font-size: 1.2rem; }
+  .nav-link { font-size: 0.9rem; }
+  .btn { padding: 0.5rem 1.5rem; font-size: 0.9rem; }
+}
