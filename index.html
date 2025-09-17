@@ -4,151 +4,234 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Newsletter App</title>
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand logo" href="#">NEWSLETTER<span style="color: #28a745;">App</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">How it works</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Why NewsletterApp?</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-outline-green" href="#">LOGIN</a></li>
-        </ul>
-      </div>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="green">NEWSLETTER</span><span class="black">APP</span>
     </div>
-  </nav>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Why NewsletterApp?</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="login-btn">LOGIN</a>
+  </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h1 class="mb-4">Bring back the joy of reading newsletters</h1>
-          <p class="lead mb-4">Discover, subscribe and manage all your email newsletters in one place.</p>
-          <a href="#" class="btn btn-green">TRY FOR FREE</a>
+    <div class="hero-text">
+      <h1>Bring back the joy of reading newsletters</h1>
+      <p>Discover, subscribe and manage all your email newsletters in one place.</p>
+      <a href="#" class="cta-btn">TRY FOR FREE</a>
+    </div>
+    <div class="hero-img">
+      <img src="./image.png" alt="Newsletter Illustration">
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <h2>Why Newsletter-App? How to enjoy your feed?</h2>
+    <p class="subtitle">Be ready for an amazing experience.</p>
+
+    <div class="features-container">
+      <!-- Left side features -->
+      <div class="features-left">
+        <div class="feature-box">
+          <h4>Kill The Spam</h4>
+          <p>Use Newsletter email to subscribe to newsletters. Win the battle against spam. Earn more time for a joyful reading.</p>
         </div>
-        <div class="col-lg-6 text-center">
-          <img src="https://picsum.photos/600/400?random=1" alt="Newsletter App" class="isometric-img">
+        <div class="feature-box">
+          <h4>Be part of Newsletter community</h4>
+          <p>Join top experts for a chat on the topics and trends that matter to you.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Discover Newsletters</h4>
+          <p>Browse through your interests and find the ultimate content. Inspire yourself!</p>
+        </div>
+      </div>
+
+      <!-- Center Image -->
+      <div class="features-image">
+        <img src="./image copy.png" alt="Newsletter Illustration">
+      </div>
+
+      <!-- Right side features -->
+      <div class="features-right">
+        <div class="feature-box">
+          <h4>One-Click Unsubscribe</h4>
+          <p>Don’t like what you’re reading? Remove the feed and never see it again.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Control Your Feed</h4>
+          <p>Group newsletters into folders, create labels, quickly mark as read and update the appearance.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Enjoy Newsletter</h4>
+          <p>No ads and spam in this app. Take reading and sharing to the next level with Listmonk.</p>
         </div>
       </div>
     </div>
   </section>
+  <!-- WHY NEWSLETTER APP SECTION -->
+  <section class="why-newsletter">
+    <h2>WHY NEWSLETTER-APP?</h2>
+    <p>
+      Newsletter-App is a brand new application for newsletters reading.
+      With Newsletter-App, you will have the chance to bring back the joy of
+      newsletter reading. There are no ads, no spam emails and...
+    </p>
+    <button class="btn">READ MORE</button>
+  </section>
 
-  <!-- Features Section -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <!-- Left Column -->
-        <div class="col-md-6">
-          <h2 class="section-title">Why Newsletter-App? How to enjoy your feed?</h2>
-          <p class="section-subtitle">Be ready for an amazing experience.</p>
-          <div class="row">
-            <div class="col-md-6 mb-4"><div class="feature-card p-4"><h4>Kill The Spam</h4><p>Use Newsletter email to subscribe...</p></div></div>
-            <div class="col-md-6 mb-4"><div class="feature-card p-4"><h4>One-Click Unsubscribe</h4><p>Don't like what you're reading?...</p></div></div>
-            <div class="col-md-6 mb-4"><div class="feature-card p-4"><h4>Be part of Newsletter community</h4><p>Join top experts for a chat...</p></div></div>
-            <div class="col-md-6 mb-4"><div class="feature-card p-4"><h4>Control Your Feed</h4><p>Group newsletters into folders...</p></div></div>
-            <div class="col-md-6 mb-4"><div class="feature-card p-4"><h4>Discover Newsletters</h4><p>Browse through your interests...</p></div></div>
-            <div class="col-md-6 mb-4"><div class="feature-card p-4"><h4>Enjoy Newsletter</h4><p>No ads and spam in this app...</p></div></div>
+  <!-- CARDS SECTION -->
+  <section class="cards">
+    <div class="card">
+      <h4 class="card-title">BUSINESS DEVELOPMENT</h4>
+      <h3 class="brand">agenus</h3>
+      <p>Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est. Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="card">
+      <h4 class="card-title">DIGITAL MARKETING</h4>
+      <h3 class="brand">agenus</h3>
+      <p>Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est. Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="card">
+      <h4 class="card-title">TECHNOLOGIES</h4>
+      <h3 class="brand">agenus</h3>
+      <p>Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est. Lorem ipsum dolor sit amet.</p>
+    </div>
+  </section>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Testimonials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NEWSLETTER SECTION -->
+  <section class="newsletter">
+    <h2>Enjoy reading newsletters</h2>
+    <p class="subtitle">
+      Read valuable, high-quality content based on your interest and expertise
+    </p>
+    <h3 class="highlight">Join 1000+ Happy Premium Users</h3>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.</p>
+        <div class="user">
+          <img src="" alt="user">
+          <div>
+            <h4>Savannah Miles</h4>
+            <span>brand manager</span>
           </div>
         </div>
-        <!-- Right Column -->
-        <div class="col-md-6 d-flex justify-content-center align-items-center">
-          <img src="https://picsum.photos/500/400?random=2" alt="Features" class="isometric-img">
-        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Why Newsletter App Section -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6"><h2 class="section-title">WHY NEWSLETTER-APP?</h2><p class="lead">Newsletter-App is a brand new...</p><a href="#" class="btn btn-green mt-3">READ MORE</a></div>
-        <div class="col-lg-6"><img src="https://picsum.photos/500/400?random=3" alt="Why Newsletter App" class="isometric-img"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Categories Section -->
-  <section class="py-5" style="background-color: #fff9e6;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4"><div class="feature-card p-4 text-center"><img src="https://picsum.photos/200/150?random=4" class="mb-3" alt="Business Development"><div class="category-badge">BUSINESS DEVELOPMENT</div><div class="category-name">agenus</div><p>Lorem ipsum...</p><div class="quote-icon">"</div></div></div>
-        <div class="col-md-4 mb-4"><div class="feature-card p-4 text-center"><img src="https://picsum.photos/200/150?random=5" class="mb-3" alt="Digital Marketing"><div class="category-badge">DIGITAL MARKETING</div><div class="category-name">agenus</div><p>Lorem ipsum...</p><div class="quote-icon">"</div></div></div>
-        <div class="col-md-4 mb-4"><div class="feature-card p-4 text-center"><img src="https://picsum.photos/200/150?random=6" class="mb-3" alt="Technologies"><div class="category-badge">TECHNOLOGIES</div><div class="category-name">agenus</div><p>Lorem ipsum...</p><div class="quote-icon">"</div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center">Enjoy reading newsletters</h2>
-      <p class="section-subtitle text-center">Read valuable content...</p>
-      <div class="row justify-content-center testimonials-grid">
-        <div class="col-md-4 mb-4"><div class="testimonial-card p-4"><p>Lorem ipsum...</p><div class="d-flex align-items-center mt-3"><img src="https://randomuser.me/api/portraits/women/44.jpg" width="40" class="rounded-circle"><div class="ms-2"><div class="fw-bold">Savannah Miles</div><div class="text-muted small">Brand Manager</div></div></div></div></div>
-        <div class="col-md-4 mb-4"><div class="testimonial-card p-4"><p>Lorem ipsum...</p><div class="d-flex align-items-center mt-3"><img src="https://randomuser.me/api/portraits/women/65.jpg" width="40" class="rounded-circle"><div class="ms-2"><div class="fw-bold">Savannah Miles</div><div class="text-muted small">Brand Manager</div></div></div></div></div>
-        <div class="col-md-4 mb-4"><div class="testimonial-card p-4"><p>Lorem ipsum...</p><div class="d-flex align-items-center mt-3"><img src="https://randomuser.me/api/portraits/men/32.jpg" width="40" class="rounded-circle"><div class="ms-2"><div class="fw-bold">Savannah Miles</div><div class="text-muted small">Brand Manager</div></div></div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Subscribe Section -->
-  <section class="subscribe-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h2 class="mb-3">Bring back the joy of reading newsletters</h2>
-          <p class="mb-4">Subscribe and be ready for an amazing experience</p>
-          <div class="mb-4">
-            <div class="d-flex align-items-center mb-2"><span class="ms-2">✔ Save time and read newsletters in one place.</span></div>
-            <div class="d-flex align-items-center mb-2"><span class="ms-2">✔ Organize your newsletter feed according to your interests.</span></div>
-            <div class="d-flex align-items-center"><span class="ms-2">✔ Forget about newsletter emails, focus only on reading.</span></div>
+      <div class="testimonial">
+        <p>Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.</p>
+        <div class="user">
+          <img src="" alt="user">
+          <div>
+            <h4>Savannah Miles</h4>
+            <span>brand manager</span>
           </div>
-          <a href="#" class="btn btn-green">SUBSCRIBE</a>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center align-items-center"><img src="https://picsum.photos/400/300?random=7" alt="Subscription" class="isometric-img"></div>
       </div>
+
+      <div class="testimonial">
+        <p>Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.</p>
+        <div class="user">
+          <img src="" alt="user">
+          <div>
+            <h4>Savannah Miles</h4>
+            <span>brand manager</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  <!-- SUBSCRIBE SECTION -->
+  <section class="subscribe">
+    <div class="subscribe-content">
+      <h2>Bring back the joy of reading newsletters</h2>
+      <p class="subtitle">Subscribe and be ready for an amazing experience</p>
+
+      <ul class="features">
+        <li>✔ Save time and read your newsletters in one place.</li>
+        <li>✔ Organize your newsletter feed according to your interests.</li>
+        <li>✔ Forget about newsletters emails and focus only in reading.</li>
+      </ul>
+
+      <button class="btn">SUBSCRIBE</button>
+    </div>
+
+    <div class="subscribe-image">
+      <img src="./image copy 2.png" alt="Newsletter Illustration">
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER SECTION -->
   <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4"><h5>Get started</h5><ul class="list-unstyled"><li><a href="#">Blog</a></li><li><a href="#">Site Map</a></li><li><a href="#">F.A.Q.</a></li></ul></div>
-        <div class="col-md-4 mb-4"><h5>Pricing</h5><ul class="list-unstyled"><li><a href="#">Bronze</a></li><li><a href="#">Silver</a></li><li><a href="#">Gold</a></li></ul></div>
-        <div class="col-md-4 mb-4"><h5>Follow</h5><ul class="list-unstyled"><li><a href="#">Facebook</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter</a></li></ul></div>
+    <div class="footer-links">
+      <div>
+          <h4><p><span class="green">Get Started</span></p></h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
       </div>
-      <hr>
-      <div class="row"><div class="col-md-12 text-center text-muted"><small>Data is a real-time snapshot...</small></div></div>
-    </div>
-  </footer>
 
-  <!-- Bottom Bar -->
-  <div class="bottom-bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6"><small><a href="#">Privacy Policy</a> / <a href="#">Terms of Service</a></small></div>
-        <div class="col-md-6 text-end"><small>2021 NEWSLETTER<span style="color: white;">App</span></small></div>
+      <div>
+        <h4><p><span class="green">Pricing</span></p></h4>
+        <ul>
+          <li><a href="#">Bronze</a></li>
+          <li><a href="#">Silver</a></li>
+          <li><a href="#">Gold</a></li>
+        </ul>
+      </div>
+
+      <div>
+     <h4><p><span class="green">Follow</span></p></h4>
+         <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
       </div>
     </div>
+
+    <div class="footer-bottom">
+      <p>
+        Data is a real-time snapshot. *Data is delayed at least 15 minutes.
+        Global drives and Natural product, Market and Analysis.
+      </p>
+ <div class="footer-row">
+  <div class="footer-meta">
+    <a class="white" href="#">Privacy Policy</a>
+    <span class="white"> / </span>
+    <a class="white" href="#">Personal Information</a>
+    <span class="white"> / </span>
+    <a class="white" href="#">Terms of Service</a>
   </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="footer-brand-text white">
+    <span>2021</span> <strong>NEWSLETTER<span class="green">App</span></strong>
+  </div>
+</div>
+  </footer>
+        
 </body>
 </html>
